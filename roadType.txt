@@ -1,6 +1,6 @@
-__roadType = { 0: {'lat': 42.09441436875603, 'lon': -8.627075783426767, 'event': 'roadType_1', 'value_can': 1, 'current_dist': 0}},
-                  1: {'lat': 42.16688622588315, 'lon': -8.623949751258655, 'event': 'roadType_0', 'value_can': 0, 'current_dist': 0}},
-                  2: {'lat': 42.21381438760497, 'lon': -8.698709700239135, 'event': 'roadType_1', 'value_can': 1, 'current_dist': 0}},
-                  3: {'lat': 42.2139318005542, 'lon': -8.698963176399566, 'event': 'roadType_0', 'value_can': 0, 'current_dist': 0}},
-                  4: {'lat': 42.10343058743478, 'lon': -8.618012309000203, 'event': 'roadType_1', 'value_can': 1, 'current_dist': 0} }}
+__roadType = { 0: {'lat': 42.09441436875603, 'lon': -8.627075783426767, 'event': 'roadType_1', 'value_can': 1, 'current_dist': 0},
+                  1: {'lat': 42.16688622588315, 'lon': -8.623949751258655, 'event': 'roadType_0', 'value_can': 0, 'current_dist': 0},
+                  2: {'lat': 42.21381438760497, 'lon': -8.698709700239135, 'event': 'roadType_1', 'value_can': 1, 'current_dist': 0},
+                  3: {'lat': 42.2139318005542, 'lon': -8.698963176399566, 'event': 'roadType_0', 'value_can': 0, 'current_dist': 0},
+                  4: {'lat': 42.10343058743478, 'lon': -8.618012309000203, 'event': 'roadType_1', 'value_can': 1, 'current_dist': 0 }}
 

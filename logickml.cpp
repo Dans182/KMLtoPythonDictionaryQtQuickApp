@@ -81,7 +81,7 @@ void LogicKml::writeDictionaryFile(const QString &outputFileName, const QDomNode
                       << "'event': '" << name << "', "
                       << "'value_can': " << type << ", "
                       << "'dist_to_next': 0, "
-                      << "'current_dist': 0}";
+                      << "'current_dist': 0";
 
             if (i == placemarkers.count() - 1) {
                 txtStream << " }}\n\n";
@@ -110,7 +110,7 @@ void LogicKml::writeDictionaryFile(const QString &outputFileName, const QDomNode
                       << "'lon': " << lon << ", "
                       << "'event': '" << event << "', "
                       << "'value_can': " << name.split("_")[1] << ", "
-                      << "'current_dist': 0}";
+                      << "'current_dist': 0";
 
             if (i == placemarkers.count() - 1) {
                 txtStream << " }}\n\n";
@@ -119,6 +119,7 @@ void LogicKml::writeDictionaryFile(const QString &outputFileName, const QDomNode
             }
             count++;
         }
+
     }
     else if (kmlFileNameWithoutExtension == "recom_speeds") {
         //recom_speeds.kml
@@ -269,8 +270,6 @@ void LogicKml::writeDictionaryFile(const QString &outputFileName, const QDomNode
         for (int i = 0; i < placemarkers.length(); ++i) {
             QDomElement placemarker = placemarkers.at(i).toElement();
             QString name = placemarker.firstChildElement("name").text();
-            count++;
-
             QString coordinates = placemarker.firstChildElement("Point")
                                       .firstChildElement("coordinates").text();
             QString lat = coordinates.split(",").at(1); // lat
@@ -295,6 +294,7 @@ void LogicKml::writeDictionaryFile(const QString &outputFileName, const QDomNode
             } else {
                 txtStream << "},\n                  ";
             }
+            count++;
         }
     }
     else if (kmlFileNameWithoutExtension == "id_crosswalk") {
@@ -303,7 +303,6 @@ void LogicKml::writeDictionaryFile(const QString &outputFileName, const QDomNode
         for (int i = 0; i < placemarkers.length(); ++i) {
             QDomElement placemarker = placemarkers.at(i).toElement();
             QString name = placemarker.firstChildElement("name").text();
-
             QString coordinates = placemarker.firstChildElement("Point")
                                       .firstChildElement("coordinates").text();
             QString lat = coordinates.split(",").at(1); // lat
@@ -337,6 +336,7 @@ void LogicKml::writeDictionaryFile(const QString &outputFileName, const QDomNode
             } else {
                 txtStream << "},\n                  ";
             }
+            count++;
         }
 
     }
