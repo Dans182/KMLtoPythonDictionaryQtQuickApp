@@ -27,6 +27,15 @@ public slots:
 private:
     void writeDictionaryFile(const QString &outputFileName, const QDomNodeList &placemarkers, QString &kmlFileNameWithoutExtension);
 
+    void writeUncoverEvents(const QDomNodeList &placemarkers, QTextStream &txtStream, int &count);
+    void writeRoadType(const QDomNodeList &placemarkers, QTextStream &txtStream, int &count);
+    void writeRecomSpeeds(const QDomNodeList &placemarkers, QTextStream &txtStream, int &count);
+    void writeNextSpeedLimits(const QDomNodeList &placemarkers, QTextStream &txtStream, int &count);
+    void write3DGroups(const QDomNodeList &placemarkers, QTextStream &txtStream, int &count);
+    void writeFilterEvents(const QDomNodeList &placemarkers, QTextStream &txtStream, int &count);
+    void writeIDCrosswalk(const QDomNodeList &placemarkers, QTextStream &txtStream, int &count);
+
+
 signals:
     void parsingCompleted(int pointCount);
 
