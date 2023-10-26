@@ -1,0 +1,5 @@
+__3d_groups = { 0: {'lat': 42.10238522027007, 'lon': -8.616353572557212, 'event': 'GP_1', 'value_can': 1, 'current_dist': 0},
+                  1: {'lat': 42.10243953280497, 'lon': -8.617721205687447, 'event': 'GP_2', 'value_can': 2, 'current_dist': 0},
+                  2: {'lat': 42.09389429608743, 'lon': -8.626021638520362, 'event': 'GP_4', 'value_can': 4, 'current_dist': 0},
+                  3: {'lat': 42.21404432890616, 'lon': -8.698681035909654, 'event': 'GP_3', 'value_can': 3, 'current_dist': 0}}
+

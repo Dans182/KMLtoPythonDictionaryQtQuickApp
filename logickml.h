@@ -25,7 +25,7 @@ public slots:
     void parseKMLFile(const QUrl &kmlFileName);
 
 private:
-    void writeDictionaryFile(const QString &outputFileName, const QDomNodeList &placemarkers);
+    void writeDictionaryFile(const QString &outputFileName, const QDomNodeList &placemarkers, QString &kmlFileNameWithoutExtension);
 
 signals:
     void parsingCompleted(int pointCount);
